@@ -1,5 +1,8 @@
 PRODUCT_RELEASE_NAME := ttab
 
+PRODUCT_COPY_FILES += \
+    device/alcatel/ttab/kernel:kernel
+
 # Inherit device configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 

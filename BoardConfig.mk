@@ -17,15 +17,15 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-#TARGET_PREBUILT_KERNEL := device/alcatel/ttab/kernel
-TARGET_KERNEL_CONFIG := ttab_defconfig
-TARGET_KERNEL_SOURCE := kernel/alcatel/ttab
-BOARD_KERNEL_IMAGE_NAME := zImage
+TARGET_PREBUILT_KERNEL := device/alcatel/ttab/kernel
+#TARGET_KERNEL_CONFIG := ttab_defconfig
+#TARGET_KERNEL_SOURCE := kernel/alcatel/ttab
+#BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_CUSTOM_BOOTIMG_MK := device/alcatel/ttab/mkbootimg.mk
-BOARD_MKBOOTIMG_ARGS := --cmdline "$(BOARD_KERNEL_CMDLINE)" --base 0x80000000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --second_offset 0x00f00000 --tags_offset 0x00000100 --board vC1O-0
+BOARD_MKBOOTIMG_ARGS := --cmdline "$(BOARD_KERNEL_CMDLINE)" --base 0x80000000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --second_offset 0x00f00000 --tags_offset 0x00000100 --board vC29-0
 
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 BOARD_FLASH_BLOCK_SIZE := 131072
