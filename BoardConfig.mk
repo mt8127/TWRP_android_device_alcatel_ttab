@@ -47,10 +47,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/mt_usb/musb-hdrc.0.aut
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TWRP_EVENT_LOGGING := true
 TW_INCLUDE_CRYPTO := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_SCREEN_BLANK := true
-
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
